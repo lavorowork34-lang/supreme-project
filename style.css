@@ -1,0 +1,73 @@
+/* Stile base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+    overflow-x: hidden; /* Evita lo scroll orizzontale */
+}
+
+/* Stile per il Canvas 3D */
+#hero-canvas {
+    position: fixed; /* Fissa il canvas in background */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    z-index: 1; /* Primo livello */
+}
+
+/* Stile per l'Overlay UI (Sopra il 3D) */
+#ui-overlay {
+    position: relative; /* Consente l'interazione */
+    z-index: 2; /* Secondo livello, sopra il canvas */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    /* Rendi il testo leggibile contro lo sfondo 3D */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
+}
+
+/* Stile per la navigazione */
+header {
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Stile per il contenuto principale (Hero) */
+.hero-content {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/* Stile per le sezioni di contenuto (sotto il fold) */
+.content-section {
+    position: relative;
+    z-index: 3; /* Assicura che sia sopra l'overlay quando si scrolla */
+    background-color: #1a1a2e; /* Sfondo scuro per contrasto */
+    color: #fff;
+    padding: 60px 40px;
+}
+
+/* Aggiungi stili per effetti di scroll (es. cambiare la prospettiva 3D) */

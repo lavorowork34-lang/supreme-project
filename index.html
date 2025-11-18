@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Azienda - Esperienza 3D Immersiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="hero-canvas"></canvas>
+
+    <div id="ui-overlay">
+        <header>
+            <nav>
+                <div class="logo">Nome Azienda</div>
+                <ul>
+                    <li><a href="#prodotti">Prodotti</a></li>
+                    <li><a href="#servizi">Servizi</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="hero-content">
+            <h1>Scopri il Futuro del Design</h1>
+            <p>Esplora il nostro catalogo prodotti in un ambiente 3D interattivo e coinvolgente.</p>
+            <button id="explore-btn">Esplora Ora</button>
+        </main>
+    </div>
+
+    <section id="prodotti" class="content-section">
+        <h2>Prodotti 3D in Vetrina</h2>
+        <p>Qui il JS controllerà l'interazione con l'oggetto 3D (es. rotazione).</p>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
